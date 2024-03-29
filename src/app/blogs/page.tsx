@@ -4,7 +4,7 @@ import React from "react";
 
 const BlogsPage = async () => {
   const res = await fetch("http://localhost:5000/blogs",{
-      cache:"no-store"
+      cache:"no-store",
   });
   const blogs = await res.json();
   return (

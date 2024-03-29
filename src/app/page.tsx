@@ -8,9 +8,9 @@ const HomePage = async () => {
   });
   const blogs=await res.json();
   return (
-    <>
+    <div className="my-10">
      <LatestBlogs blogs={blogs}/>
-    </>
+    </div>
   );
 };
 
